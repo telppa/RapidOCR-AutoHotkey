@@ -23,6 +23,8 @@ MsgBox % inst.ocr([0, 0, 100, 200])
 ; ocr the clipboard
 ; 识别剪贴板
 MsgBox % inst.ocr(ClipboardAll)
+
+#Include RapidOCR\RapidOCR.ahk
 ```
 For more usages, please refer to the sample file.  
 更多用法请看示例文件。  
