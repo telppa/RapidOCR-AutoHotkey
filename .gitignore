@@ -1,0 +1,25 @@
+# 编译中间产物
+*.o
+*.obj
+*.gch
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.map
+
+# 随手编译出来的测试程序
+*.exe
+
+# 按 编译.bat 的提示解压到源码目录的编译器（约 200 MB，别提交）
+源码/w64devkit/
+
+# 系统垃圾
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 临时文件
+*.log
+*.tmp
+*~

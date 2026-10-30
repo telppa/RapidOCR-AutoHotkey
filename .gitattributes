@@ -1,0 +1,30 @@
+# 换行符：.ahk / .bat 必须是 CRLF（AHK v1 与 cmd 都挑这个）；
+# 源码与文档用 LF，避免跨平台 diff 噪音。
+* text=auto eol=lf
+
+*.ahk  text eol=crlf
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+*.c    text eol=lf
+*.cc   text eol=lf
+*.cpp  text eol=lf
+*.h    text eol=lf
+*.hpp  text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+
+# 二进制：不要做任何换行或文本转换
+*.dll  binary
+*.onnx binary
+*.exe  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.bmp  binary
+*.pdf  binary
+*.ico  binary
+
+# GitHub 语言统计：AHK 是主语言，别让 C++ 抢走
+*.ahk linguist-language=AutoHotkey
